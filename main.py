@@ -21,7 +21,7 @@ def head():
         f.write(h)
         f.close()
         subprocess.run(f"cwebp {name}.{pth.split('.')[-1]} -o {name}.webp",shell=True)
-        tb.send_message(js['message']['chat']['id'],f"https://raw.githubusercontent.com/BFssw/bobr-tech-img/main/{name}.webp")
+        tb.send_message(js['message']['chat']['id'],f"https://raw.githubusercontent.com/BFssw/bobr-tech-img/master/{name}.webp")
     try:
         if js['message']['text'] == '/start' or js['message']['text'] == '/status':
             tb.send_message(js['message']['chat']['id'],f"{js['message']['chat']['id']} - work")
